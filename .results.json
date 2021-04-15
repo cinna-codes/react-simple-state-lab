@@ -1,0 +1,333 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 10,
+    "passes": 3,
+    "pending": 0,
+    "failures": 7,
+    "start": "2021-04-15T02:26:09.884Z",
+    "end": "2021-04-15T02:26:10.035Z",
+    "duration": 151
+  },
+  "tests": [
+    {
+      "title": "uses a default 'values' prop of an array with 10 items",
+      "fullTitle": "<Matrix /> uses a default 'values' prop of an array with 10 items",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "each sub-array of the default 'values' prop is an array",
+      "fullTitle": "<Matrix /> each sub-array of the default 'values' prop is an array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "each sub-array of the default values prop is filled with 10 hex color string equal to: '#F00'",
+      "fullTitle": "<Matrix /> each sub-array of the default values prop is filled with 10 hex color string equal to: '#F00'",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
+      "fullTitle": "<Cell /> is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected {} to have a length of 1 but got 0",
+        "showDiff": true,
+        "actual": "0",
+        "expected": "1",
+        "stack": "AssertionError: expected {} to have a length of 1 but got 0\n    at Context.<anonymous> (test/1-Cell.test.js:32:45)\n    at processImmediate (node:internal/timers:463:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "expected {} to have a length of 1 but got 0",
+            "showDiff": true,
+            "actual": "0",
+            "expected": "1",
+            "multiple": "AssertionError: expected {} to have a length of 1 but got 0",
+            "stack": "AssertionError: expected {} to have a length of 1 but got 0\n    at Context.<anonymous> (test/1-Cell.test.js:32:45)\n    at processImmediate (node:internal/timers:463:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "has a state key of 'color'",
+      "fullTitle": "<Cell /> has a state key of 'color'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'hasOwnProperty' of null\n    at Context.<anonymous> (test/1-Cell.test.js:36:12)\n    at processImmediate (node:internal/timers:463:21)",
+        "message": "Cannot read property 'hasOwnProperty' of null",
+        "multiple": [
+          {
+            "multiple": "TypeError: Cannot read property 'hasOwnProperty' of null"
+          }
+        ]
+      }
+    },
+    {
+      "title": "state.color is initially set to the 'value' prop passed from Matrix",
+      "fullTitle": "<Cell /> state.color is initially set to the 'value' prop passed from Matrix",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`\n    at ShallowWrapper.state (node_modules/enzyme/src/ShallowWrapper.js:1197:15)\n    at Context.<anonymous> (test/1-Cell.test.js:41:22)\n    at processImmediate (node:internal/timers:463:21)",
+        "message": "ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`",
+        "multiple": [
+          {
+            "multiple": "TypeError: ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`"
+          }
+        ]
+      }
+    },
+    {
+      "title": "has an event listener for clicks on the <div> (don't forget: 'onClick' in React!)",
+      "fullTitle": "<Cell /> has an event listener for clicks on the <div> (don't forget: 'onClick' in React!)",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/1-Cell.test.js:46:60)\n    at processImmediate (node:internal/timers:463:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "expected false to equal true",
+            "showDiff": true,
+            "actual": "false",
+            "expected": "true",
+            "operator": "strictEqual",
+            "multiple": "AssertionError: expected false to equal true",
+            "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/1-Cell.test.js:46:60)\n    at processImmediate (node:internal/timers:463:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "has an event listener that, when clicked, calls this.setState() once (make sure you aren't setting state directly, but instead using the component's 'setState' method)",
+      "fullTitle": "<Cell /> has an event listener that, when clicked, calls this.setState() once (make sure you aren't setting state directly, but instead using the component's 'setState' method)",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/1-Cell.test.js:52:36)\n    at processImmediate (node:internal/timers:463:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "expected false to equal true",
+            "showDiff": true,
+            "actual": "false",
+            "expected": "true",
+            "operator": "strictEqual",
+            "multiple": "AssertionError: expected false to equal true",
+            "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/1-Cell.test.js:52:36)\n    at processImmediate (node:internal/timers:463:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "has an event listener that, when clicked, sets state's 'color' key to a value of '#333'",
+      "fullTitle": "<Cell /> has an event listener that, when clicked, sets state's 'color' key to a value of '#333'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`\n    at ShallowWrapper.state (node_modules/enzyme/src/ShallowWrapper.js:1197:15)\n    at Context.<anonymous> (test/1-Cell.test.js:57:22)\n    at processImmediate (node:internal/timers:463:21)",
+        "message": "ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`",
+        "multiple": [
+          {
+            "multiple": "TypeError: ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`"
+          }
+        ]
+      }
+    },
+    {
+      "title": "sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
+      "fullTitle": "<Cell /> sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'hasOwnProperty' of undefined\n    at Context.<anonymous> (test/1-Cell.test.js:61:12)\n    at processImmediate (node:internal/timers:463:21)",
+        "message": "Cannot read property 'hasOwnProperty' of undefined",
+        "multiple": [
+          {
+            "multiple": "TypeError: Cannot read property 'hasOwnProperty' of undefined"
+          }
+        ]
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
+      "fullTitle": "<Cell /> is a correctly defined and exported React component which renders a <div> with a className of 'cell'",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected {} to have a length of 1 but got 0",
+        "showDiff": true,
+        "actual": "0",
+        "expected": "1",
+        "stack": "AssertionError: expected {} to have a length of 1 but got 0\n    at Context.<anonymous> (test/1-Cell.test.js:32:45)\n    at processImmediate (node:internal/timers:463:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "expected {} to have a length of 1 but got 0",
+            "showDiff": true,
+            "actual": "0",
+            "expected": "1",
+            "multiple": "AssertionError: expected {} to have a length of 1 but got 0",
+            "stack": "AssertionError: expected {} to have a length of 1 but got 0\n    at Context.<anonymous> (test/1-Cell.test.js:32:45)\n    at processImmediate (node:internal/timers:463:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "has a state key of 'color'",
+      "fullTitle": "<Cell /> has a state key of 'color'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'hasOwnProperty' of null\n    at Context.<anonymous> (test/1-Cell.test.js:36:12)\n    at processImmediate (node:internal/timers:463:21)",
+        "message": "Cannot read property 'hasOwnProperty' of null",
+        "multiple": [
+          {
+            "multiple": "TypeError: Cannot read property 'hasOwnProperty' of null"
+          }
+        ]
+      }
+    },
+    {
+      "title": "state.color is initially set to the 'value' prop passed from Matrix",
+      "fullTitle": "<Cell /> state.color is initially set to the 'value' prop passed from Matrix",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`\n    at ShallowWrapper.state (node_modules/enzyme/src/ShallowWrapper.js:1197:15)\n    at Context.<anonymous> (test/1-Cell.test.js:41:22)\n    at processImmediate (node:internal/timers:463:21)",
+        "message": "ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`",
+        "multiple": [
+          {
+            "multiple": "TypeError: ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`"
+          }
+        ]
+      }
+    },
+    {
+      "title": "has an event listener for clicks on the <div> (don't forget: 'onClick' in React!)",
+      "fullTitle": "<Cell /> has an event listener for clicks on the <div> (don't forget: 'onClick' in React!)",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/1-Cell.test.js:46:60)\n    at processImmediate (node:internal/timers:463:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "expected false to equal true",
+            "showDiff": true,
+            "actual": "false",
+            "expected": "true",
+            "operator": "strictEqual",
+            "multiple": "AssertionError: expected false to equal true",
+            "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/1-Cell.test.js:46:60)\n    at processImmediate (node:internal/timers:463:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "has an event listener that, when clicked, calls this.setState() once (make sure you aren't setting state directly, but instead using the component's 'setState' method)",
+      "fullTitle": "<Cell /> has an event listener that, when clicked, calls this.setState() once (make sure you aren't setting state directly, but instead using the component's 'setState' method)",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/1-Cell.test.js:52:36)\n    at processImmediate (node:internal/timers:463:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "expected false to equal true",
+            "showDiff": true,
+            "actual": "false",
+            "expected": "true",
+            "operator": "strictEqual",
+            "multiple": "AssertionError: expected false to equal true",
+            "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/1-Cell.test.js:52:36)\n    at processImmediate (node:internal/timers:463:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "has an event listener that, when clicked, sets state's 'color' key to a value of '#333'",
+      "fullTitle": "<Cell /> has an event listener that, when clicked, sets state's 'color' key to a value of '#333'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`\n    at ShallowWrapper.state (node_modules/enzyme/src/ShallowWrapper.js:1197:15)\n    at Context.<anonymous> (test/1-Cell.test.js:57:22)\n    at processImmediate (node:internal/timers:463:21)",
+        "message": "ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`",
+        "multiple": [
+          {
+            "multiple": "TypeError: ShallowWrapper::state(\"color\") requires that `state` not be `null` or `undefined`"
+          }
+        ]
+      }
+    },
+    {
+      "title": "sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
+      "fullTitle": "<Cell /> sets the <div>'s inline style attribute to 'style={{backgroundColor: this.state.color}}'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'hasOwnProperty' of undefined\n    at Context.<anonymous> (test/1-Cell.test.js:61:12)\n    at processImmediate (node:internal/timers:463:21)",
+        "message": "Cannot read property 'hasOwnProperty' of undefined",
+        "multiple": [
+          {
+            "multiple": "TypeError: Cannot read property 'hasOwnProperty' of undefined"
+          }
+        ]
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "uses a default 'values' prop of an array with 10 items",
+      "fullTitle": "<Matrix /> uses a default 'values' prop of an array with 10 items",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "each sub-array of the default 'values' prop is an array",
+      "fullTitle": "<Matrix /> each sub-array of the default 'values' prop is an array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "each sub-array of the default values prop is filled with 10 hex color string equal to: '#F00'",
+      "fullTitle": "<Matrix /> each sub-array of the default values prop is filled with 10 hex color string equal to: '#F00'",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
